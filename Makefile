@@ -1,6 +1,6 @@
 CC=gcc --std=c99 -g
 
-all: factorial fibonacci simple_sum digit_sum binary_search
+all: factorial fibonacci simple_sum digit_sum palindrome
 
 factorial: factorial.c
 	$(CC) factorial.c -o factorial
@@ -14,9 +14,9 @@ simple_sum: simple_sum.c
 digit_sum: digit_sum.c
 	$(CC) digit_sum.c -o digit_sum
 
-binary_search: binary_search.c
-	$(CC) binary_search.c -o binary_search
+palindrome: palindrome.c
+	$(CC) palindrome.c -o palindrome
 
 clean:
-	rm -f *.o factorial fibonacci simple_sum digit_sum binary_search
+	rm -f *.o factorial fibonacci simple_sum digit_sum palindrome
 	rm -rf *.dSYM
